@@ -1,0 +1,9 @@
+<view class="login-page">
+  <view class="login-card">
+    <view class="logo">拾纷</view>
+    <view class="login-title">电商仓库管理系统</view>
+    <view class="login-tip">请输入公司代码后进入系统</view>
+    <input class="input login-input" password placeholder="公司代码" value="{{code}}" bindinput="onCodeInput" />
+    <button class="btn" bindtap="enterSystem">进入系统</button>
+  </view>
+</view>

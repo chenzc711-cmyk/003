@@ -1,0 +1,223 @@
+page {
+  min-height: 100%;
+  background: linear-gradient(180deg, #fff2f5 0%, #fff 42%, #fff7f8 100%);
+  color: #2d1720;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220rpx;
+  padding: 30rpx;
+  border-radius: 34rpx;
+  background: linear-gradient(135deg, #ff0036 0%, #ff5a78 48%, #ff9a3d 100%);
+  box-shadow: 0 18rpx 42rpx rgba(255, 0, 54, 0.22);
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  display: block;
+  width: 100%;
+  font-size: 42rpx;
+  font-weight: 800;
+  letter-spacing: 2rpx;
+  text-align: center;
+}
+
+.hero-subtitle {
+  display: block;
+  margin-top: 12rpx;
+  width: 100%;
+  font-size: 24rpx;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 34rpx 0 18rpx;
+  color: #ff0036;
+  font-size: 30rpx;
+  font-weight: 800;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 22rpx;
+  padding: 26rpx;
+  border: 1rpx solid rgba(255, 0, 54, 0.08);
+  border-radius: 28rpx;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12rpx 34rpx rgba(141, 42, 60, 0.09);
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18rpx;
+}
+
+.metric {
+  display: flex;
+  min-height: 154rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 14rpx;
+  border-radius: 26rpx;
+  background: linear-gradient(180deg, #ffffff 0%, #fff6f8 100%);
+  border: 1rpx solid #ffe0e7;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.metric-label {
+  width: 100%;
+  color: #845361;
+  font-size: 22rpx;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.metric-value {
+  width: 100%;
+  margin-top: 12rpx;
+  color: #ff0036;
+  font-size: 34rpx;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+  word-break: break-all;
+}
+
+.form-row {
+  margin-bottom: 18rpx;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10rpx;
+  color: #6b3443;
+  font-size: 24rpx;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input,
+.picker-box,
+.textarea {
+  width: 100%;
+  min-height: 78rpx;
+  padding: 0 22rpx;
+  border: 1rpx solid #ffd3dd;
+  border-radius: 20rpx;
+  background: #fff;
+  color: #2d1720;
+  font-size: 26rpx;
+  line-height: 78rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.textarea {
+  min-height: 130rpx;
+  padding-top: 18rpx;
+  line-height: 1.5;
+}
+
+.button-row {
+  display: flex;
+  gap: 16rpx;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+.btn {
+  flex: 1;
+  height: 78rpx;
+  border-radius: 40rpx;
+  background: linear-gradient(135deg, #ff0036, #ff6a3d);
+  color: #fff;
+  font-size: 26rpx;
+  font-weight: 700;
+  line-height: 78rpx;
+  text-align: center;
+  box-shadow: 0 12rpx 22rpx rgba(255, 0, 54, 0.2);
+}
+
+.btn.secondary {
+  background: #fff;
+  color: #ff0036;
+  border: 1rpx solid #ffb4c2;
+  box-shadow: none;
+}
+
+.toolbar {
+  display: flex;
+  gap: 14rpx;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18rpx;
+}
+
+.record {
+  padding: 20rpx;
+  border-radius: 22rpx;
+  background: #fffafa;
+  border: 1rpx solid #ffe0e7;
+  margin-bottom: 16rpx;
+}
+
+.record-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+
+.record-title {
+  flex: 1;
+  color: #ff0036;
+  font-size: 28rpx;
+  font-weight: 800;
+  text-align: center;
+}
+
+.record-text {
+  margin-top: 8rpx;
+  color: #684250;
+  font-size: 24rpx;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.empty {
+  padding: 46rpx 20rpx;
+  color: #9a6874;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.warning {
+  color: #ff7a00;
+  font-weight: 800;
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14rpx;
+}
