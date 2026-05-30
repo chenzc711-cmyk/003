@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="hero">
+    <view>
+      <text class="hero-title">拾纷电商管理系统</text>
+      <text class="hero-subtitle">天猫风格 · 库存 / 入库 / 出库 / 成本一体化</text>
+    </view>
+  </view>
+
+  <view class="section-title">经营仪表盘</view>
+  <view class="grid">
+    <view class="metric" wx:for="{{metrics}}" wx:key="label">
+      <text class="metric-label">{{item.label}}</text>
+      <text class="metric-value">{{item.value}}</text>
+    </view>
+  </view>
+
+  <view class="section-title">库存预警明细</view>
+  <view class="card" wx:if="{{warnings.length}}">
+    <view class="record" wx:for="{{warnings}}" wx:key="id">
+      <view class="record-title">{{item.name}}｜{{item.spec}}</view>
+      <view class="record-text warning">当前 {{item.stock}} 件，预警线 {{item.warningQty}} 件</view>
+      <view class="record-text">供应商：{{item.supplier}}</view>
+    </view>
+  </view>
+  <view class="empty" wx:else>暂无低库存预警，经营状态良好</view>
+</view>
